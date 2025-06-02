@@ -1,14 +1,11 @@
 FROM node:18-alpine
 
 WORKDIR /app
-
-# Install dependencies
+RUN npm intall -g pnpm
 COPY package.json package-lock.json ./
-RUN npm install
-# Copy the rest of the application code
+RUN pnpm install
 COPY . .
-RUN npm run build
-# Expose the port the app runs on
+RUN pnpm run build
+
 EXPOSE 3000
-# Start the application
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]

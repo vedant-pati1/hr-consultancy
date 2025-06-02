@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card, Typography, Rate, Avatar } from 'antd';
+import React from "react";
+import { Card, Typography, Rate, Avatar } from "antd";
 
 const { Text, Paragraph } = Typography;
 
@@ -26,15 +26,21 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <Rate disabled defaultValue={rating} className="mb-4" />
         <Paragraph className="italic mb-4 flex-grow">"{content}"</Paragraph>
         <div className="flex items-center mt-auto">
-          <Avatar 
-            size={50} 
-            src={avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${name}`} 
-            className="mr-3" 
-            style={{marginRight: 12}}
+          <Avatar
+            size={50}
+            src={
+              avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${name}`
+            }
+            className="mr-3"
+            style={{ marginRight: 12 }}
           />
           <div>
-            <Text strong className="block">{name}</Text>
-            <Text type="secondary">{role}, {company}</Text>
+            <Text strong className="block">
+              {name}
+            </Text>
+            <Text type="secondary">
+              {role}, {company}
+            </Text>
           </div>
         </div>
       </div>

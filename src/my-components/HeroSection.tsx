@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Typography, Button, Space } from "antd";
 const { Title, Paragraph } = Typography;

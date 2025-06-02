@@ -9,38 +9,29 @@ import { Button } from "antd";
 import Link from "next/link";
 import Footer from "@/my-components/FooterComponent";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "HR Consultancy",
   description: "HR Consultancy - Your Partner in Human Resources",
 };
-
-const items = [
-  { label: "Home", key: "/home" },
-  { label: "About Us", key: "/about-us" },
-  { label: "Services", key: "/services" },
-  { label: "Contact", key: "/contact" },
-];
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const items = [
+    { label: "Home", key: "/home" },
+    { label: "About Us", key: "/about-us" },
+    { label: "Services", key: "/services" },
+    { label: "Contact", key: "/contact" },
+  ];
   return (
     <html lang="en">
-      <body style={{
-        overflow:"visible",
-      }}>
+      <body
+        style={{
+          overflow: "visible",
+        }}
+      >
         <AntdRegistry>
           <Layout>
             <Header
@@ -68,7 +59,7 @@ export default function RootLayout({
               <Button type="primary">Get started</Button>
             </Header>
             <Content className="height-full">{children}</Content>
-            <Footer/>
+            <Footer />
           </Layout>
         </AntdRegistry>
       </body>

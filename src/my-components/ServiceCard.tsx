@@ -1,6 +1,6 @@
-import React from 'react';
-import { Card, Typography } from 'antd';
-import Link from 'next/link';
+import React from "react";
+import { Card, Typography } from "antd";
+import Link from "next/link";
 const { Title, Paragraph } = Typography;
 
 interface ServiceCardProps {
@@ -9,17 +9,15 @@ interface ServiceCardProps {
   icon: React.ReactNode;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  title,
+  description,
+  icon,
+}) => {
   return (
     <Link href="/services\" className="block">
-      <Card
-        variant='outlined'
-        className="service-card h-full"
-        hoverable
-      >
-        <div className="text-center mb-4 text-[#1890ff]">
-          {icon}
-        </div>
+      <Card variant="outlined" className="service-card h-full" hoverable>
+        <div className="text-center mb-4 text-[#1890ff]">{icon}</div>
         <Title level={4} className="text-center mb-4">
           {title}
         </Title>
