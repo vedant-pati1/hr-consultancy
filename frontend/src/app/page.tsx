@@ -4,7 +4,7 @@ import ServiceCard from "@/my-components/ServiceCard";
 import TestimonialCard from "@/my-components/TestimonialCard";
 import { Typography, Row, Col, Card, Carousel, Button } from "antd";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import {
   DollarOutlined,
   SafetyOutlined,

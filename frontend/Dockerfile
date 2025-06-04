@@ -7,5 +7,7 @@ RUN pnpm install
 COPY . .
 RUN pnpm run build
 
-EXPOSE 3000
+# Add environment variables
+
 CMD ["pnpm", "start"]
+EXPOSE 3000

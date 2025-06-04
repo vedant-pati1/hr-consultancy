@@ -180,7 +180,8 @@ const AboutPage: React.FC = () => {
           <Row gutter={[24, 48]} justify="center" align="middle">
             <Col xs={24} md={12} lg={10} className="fade-in">
               <img
-                src="https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                // src="https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/images/four-people-and-desk.jpeg"
                 alt="Professional team meeting"
                 className="rounded-lg shadow-md w-full"
               />

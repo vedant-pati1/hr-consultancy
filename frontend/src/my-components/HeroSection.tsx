@@ -1,4 +1,5 @@
 "use client";
+import "@ant-design/v5-patch-for-react-19";
 import React from "react";
 import { Typography, Button, Space } from "antd";
 const { Title, Paragraph } = Typography;
@@ -17,10 +18,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <div
-      className="hero-section p-[100px] "
+      className="hero-section p-[100px]"
       style={{
-        // backdropFilter: 'linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7))',
-        backgroundImage: `url('/images/hero-section.webp')`,
+        backgroundImage: `linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('/images/hero-section.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
