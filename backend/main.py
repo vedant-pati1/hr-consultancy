@@ -5,7 +5,8 @@ from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
-from model import GetInTouchForm,RequirementForm
+from .form_model import GetInTouchForm,RequirementsForm
+from .db.orm import add_get_in_touch_form, add_requirements_form,session, GetInTouch, Requirements
 
 load_dotenv()
 
@@ -23,13 +24,30 @@ app.add_middleware(
 
 @app.post("/api/form/contact")
 async def contact(body:Annotated[GetInTouchForm, Body()]):
-    pass
+    try:
+        with session() as db_session:
+            form = add_get_in_touch_form(db_session, GetInTouch(**body.model_dump()))
+            if form:
+                return {"message": "Form submitted successfully", "form_id": form.id}
+            else:
+                return {"message": "Error submitting form"}
+    except:
+        return {"message": "Error while adding data to db"}
+    
 
 
 @app.post("/api/form/requirements")
-async def contact(body:Annotated[RequirementForm, Body()]):
-    pass
+async def contact(body:Annotated[RequirementsForm, Body()]):
+    try:
+        with session() as db_session:
+            form = add_requirements_form(db_session,Requirements(**body.model_dump()))
+            if form:
+                return {"message": "Form submitted successfully", "form_id": form.id}
+            else:
+                return {"message": "Error submitting form"}
+    except:
+        return {"message": "Error while adding data to db"}
 
 @app.get('/health')
 async def health_check():
-    return {'message':"Backend online"}
+    return {'message':"Backend is online"}

@@ -7,7 +7,7 @@ class GetInTouchForm(BaseModel):
     phone_number:str |None = None
     message: str|None = None
 
-class RequirementForm(BaseModel):
+class RequirementsForm(BaseModel):
     company: str
     email: EmailStr
     location: str
