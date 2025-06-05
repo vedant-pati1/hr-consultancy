@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
-import { Typography, Row, Col, Card } from "antd";
-import {
-  PhoneOutlined,
-  MailOutlined,
-  EnvironmentOutlined,
-  ClockCircleOutlined,
-} from "@ant-design/icons";
+import { Typography, Row, Col } from "antd";
+
 
 import HeroSection from "@/my-components/HeroSection";
 import ContactForm from "@/my-components/ContactForm";

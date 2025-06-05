@@ -1,0 +1,23 @@
+services:
+  web:
+    build: ./frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
+  
+  api:
+    build: ./backend
+    ports:
+      - 8000:8000
+    depends_on:
+      - database
+  
+  database:
+    image: postgres:17
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres_password
+      - POSTGRES_DB=my_app
+      - POSTGRES_USER=postgres
