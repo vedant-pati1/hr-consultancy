@@ -5,8 +5,8 @@ from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
-from .form_model import GetInTouchForm,RequirementsForm
-from .db.orm import add_get_in_touch_form, add_requirements_form,session, GetInTouch, Requirements
+from form_model import GetInTouchForm,RequirementsForm
+from db.orm import add_get_in_touch_form, add_requirements_form,session, GetInTouch, Requirements
 
 load_dotenv()
 

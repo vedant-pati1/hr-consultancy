@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from .db_model import Requirements, GetInTouch,engine
+from db.db_model import Requirements, GetInTouch, engine
 from sqlalchemy.orm import sessionmaker,Session
 
 

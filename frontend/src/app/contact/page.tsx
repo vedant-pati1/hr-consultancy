@@ -96,7 +96,7 @@ const ContactPage: React.FC = () => {
               <ContactForm
                 title="Get in touch"
                 isRequirementForm={false}
-                post_url={`${process.env.BACKEND_URL}/api/form/contact`}
+                post_url={`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form/contact`}
               />
             </Col>
 
@@ -104,7 +104,7 @@ const ContactPage: React.FC = () => {
               <ContactForm
                 title="Submit Your Requirements"
                 isRequirementForm={true}
-                post_url={`${process.env.BACKEND_URL}/api/form/requirements`}
+                post_url={`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form/requirements`}
               />
             </Col>
           </Row>
