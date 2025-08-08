@@ -18,7 +18,7 @@ const HeaderComponent = () => {
   }
 
   const items = [
-    { label: "Home", key: "/home" },
+    { label: "Home", key: "/" },
     { label: "About Us", key: "/about-us" },
     { label: "Services", key: "/services" },
     { label: "Contact", key: "/contact" },
@@ -58,7 +58,6 @@ const HeaderComponent = () => {
             <Button type="primary">Contact Us</Button>
           </Link>
         </div>
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <Button
             type="text"
@@ -68,7 +67,6 @@ const HeaderComponent = () => {
           />
         </div>
       </Header>
-      {/* Mobile Drawer Navigation */}
       <Drawer
         title="Menu"
         placement="right"

@@ -8,32 +8,6 @@ import ContactForm from "@/my-components/ContactForm";
 const { Title, Paragraph, Text } = Typography;
 
 const ContactPage: React.FC = () => {
-  // const contactInfo = [
-  //   {
-  //     icon: <PhoneOutlined style={{ fontSize: 24 }} />,
-  //     title: "Phone",
-  //     details: "+91 9876543210",
-  //     action: "tel:+919876543210"
-  //   },
-  //   {
-  //     icon: <MailOutlined style={{ fontSize: 24 }} />,
-  //     title: "Email",
-  //     details: "info@hrremedy.com",
-  //     action: "mailto:info@hrremedy.com"
-  //   },
-  //   {
-  //     icon: <EnvironmentOutlined style={{ fontSize: 24 }} />,
-  //     title: "Address",
-  //     details: "123 Business Avenue, Corporate Park, Mumbai, India",
-  //     action: "https://maps.google.com/?q=Mumbai,India"
-  //   },
-  //   {
-  //     icon: <ClockCircleOutlined style={{ fontSize: 24 }} />,
-  //     title: "Business Hours",
-  //     details: "Monday - Friday: 9:00 AM - 6:00 PM",
-  //     action: null
-  //   }
-  // ];
 
   return (
     <div>
@@ -43,7 +17,6 @@ const ContactPage: React.FC = () => {
         showButtons={false}
       />
 
-      {/* Contact Information */}
       <section
         className="section-padding bg-white"
         style={{ paddingTop: 64, paddingBottom: 64 }}

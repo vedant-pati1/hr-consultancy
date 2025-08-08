@@ -14,25 +14,6 @@ import Paragraph from "antd/es/typography/Paragraph";
 import Text from "antd/es/typography/Text";
 
 const AboutPage: React.FC = () => {
-  //   useEffect(() => {
-  //     const observerCallback = (entries: IntersectionObserverEntry[]) => {
-  //       entries.forEach(entry => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add('visible');
-  //         }
-  //       });
-  //     };
-
-  //     const observer = new IntersectionObserver(observerCallback, {
-  //       threshold: 0.1
-  //     });
-
-  //     document.querySelectorAll('.fade-in').forEach(element => {
-  //       observer.observe(element);
-  //     });
-
-  //     return () => observer.disconnect();
-  //   }, []);
 
   const values = [
     {
@@ -71,7 +52,6 @@ const AboutPage: React.FC = () => {
         showButtons={false}
       />
 
-      {/* Our Story Section */}
       <section className="section-padding bg-white" style={{ padding: 64 }}>
         <div className="container mx-auto px-4">
           <div className="section-title" style={{ marginBottom: 32 }}>
@@ -114,7 +94,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission & Vision Section */}
       <section className="section-padding bg-gray-50" style={{ padding: 64 }}>
         <div className="container mx-auto px-4">
           <Row gutter={[24, 24]}>
@@ -147,7 +126,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Values Section */}
       <section className="section-padding bg-white" style={{ padding: 64 }}>
         <div className="container mx-auto px-4">
           <div className="section-title">
@@ -168,7 +146,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="section-padding bg-gray-50" style={{ padding: 64 }}>
         <div className="container mx-auto px-4">
           <div className="section-title">
@@ -210,7 +187,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="section-padding bg-white" style={{ padding: 64 }}>
         <div className="container mx-auto px-4">
           <div className="section-title">

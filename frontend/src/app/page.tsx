@@ -127,7 +127,7 @@ export default function Home() {
               <Paragraph
                 style={{
                   color: "rgba(0, 0, 0, 0.85)",
-                  fontSize: "1.125rem", // text-lg
+                  fontSize: "1.125rem",
                   textAlign: "center",
                   marginLeft: "auto",
                   marginRight: "auto",
@@ -243,7 +243,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section
         style={{ paddingTop: 64, paddingBottom: 64 }}
         className="bg-gray-50"

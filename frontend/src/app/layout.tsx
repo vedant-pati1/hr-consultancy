@@ -25,7 +25,6 @@ export default function RootLayout({
         <AntdRegistry>
           <Layout>
             <Header />
-            {/* Main content area */}
             <Content className="height-full">{children}</Content>
             <Footer />
           </Layout>

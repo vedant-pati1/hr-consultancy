@@ -24,6 +24,7 @@ yarn-error.log*
 
 #Python Env
 venv
+.ruff_cache
 
 # typescript
 *.tsbuildinfo

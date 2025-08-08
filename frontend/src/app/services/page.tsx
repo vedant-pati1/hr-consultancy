@@ -173,7 +173,7 @@ const ServicesPage: React.FC = () => {
 
           {/* IMPORTANT*/}
           {/* flex-row-reverse is not working because their is issue with tailwind css configuration
-            after fixing it you can use it. */}
+            after fixing it you can use it. fix it later*/}
 
           {services.map((service, index) => (
             <div key={index} className="mb-16 fade-in">
@@ -254,7 +254,6 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-[#1890ff] text-white">
         <div className="container mx-auto px-4 text-center">
           <Title level={2} className="text-white mb-6">
