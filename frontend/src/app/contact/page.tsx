@@ -2,13 +2,11 @@
 import React from "react";
 import { Typography, Row, Col } from "antd";
 
-
 import HeroSection from "@/my-components/HeroSection";
 import ContactForm from "@/my-components/ContactForm";
 const { Title, Paragraph, Text } = Typography;
 
 const ContactPage: React.FC = () => {
-
   return (
     <div>
       <HeroSection

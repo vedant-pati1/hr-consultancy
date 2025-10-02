@@ -18,7 +18,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <div
-      className="hero-section p-[100px]"
+      className="hero-section  px-[50px] py-[70px] md:p-[100px]"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('/images/hero-section.webp')`,
         backgroundSize: "cover",
@@ -28,12 +28,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="container mx-auto px-4 text-center">
         <Title
           level={1}
-          className="text-white mb-4 text-4xl md:text-5xl lg:text-6xl"
         >
-          {title}
+          <span 
+          className="text-white mb-5 text-4xl md:text-5xl lg:text-6xl">{title}</span>
         </Title>
         <Paragraph
-          className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto"
           style={{
             color: "rgba(255, 255, 255)",
             fontSize: "1.25rem",
@@ -44,7 +43,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             marginRight: "auto",
           }}
         >
+          <div className="text-xl">
           {subtitle}
+          </div>
         </Paragraph>
 
         {showButtons && (

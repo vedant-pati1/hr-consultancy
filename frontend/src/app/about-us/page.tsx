@@ -14,7 +14,6 @@ import Paragraph from "antd/es/typography/Paragraph";
 import Text from "antd/es/typography/Text";
 
 const AboutPage: React.FC = () => {
-
   const values = [
     {
       icon: <TrophyOutlined style={{ fontSize: 32 }} />,
@@ -103,9 +102,10 @@ const AboutPage: React.FC = () => {
                   <span className="text-[#1890ff] mr-2">Our Mission</span>
                 </Title>
                 <Paragraph className="text-lg" style={{ fontSize: 18 }}>
-                  To empower businesses with practical, compliant, and
-                  people-centric HR solutions that drive growth and create
-                  positive workplace environments.
+                  To simplify and strengthen the people side of business through
+                  expert-led HR solutions — including payroll, compliance,
+                  recruitment, and policy development — delivered with
+                  integrity, precision, and care.
                 </Paragraph>
               </Card>
             </Col>
@@ -116,9 +116,10 @@ const AboutPage: React.FC = () => {
                   <span className="text-[#1890ff] mr-2">Our Vision</span>
                 </Title>
                 <Paragraph className="text-lg" style={{ fontSize: 18 }}>
-                  To be the most trusted HR partner for growing businesses,
-                  known for our expertise, integrity, and commitment to helping
-                  organizations and their people thrive.
+                  To be the most trusted and innovative HR partner for
+                  businesses, empowering them with seamless workforce solutions
+                  that drive growth, compliance, and a positive workplace
+                  culture.
                 </Paragraph>
               </Card>
             </Col>

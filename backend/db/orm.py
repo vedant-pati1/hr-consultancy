@@ -1,9 +1,7 @@
 from db.db_model import Requirements, GetInTouch, engine
 from sqlalchemy.orm import sessionmaker, Session
 
-
 session = sessionmaker(bind=engine)
-
 
 def add_requirements_form(
     session: Session, requirements: Requirements
