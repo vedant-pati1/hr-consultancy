@@ -247,7 +247,8 @@ export default function Home() {
         style={{ paddingTop: 64, paddingBottom: 64 }}
         className="bg-gray-50"
       >
-        <div className="container mx-auto px-4">
+        {/* Testimonials are disabled currently */}
+        {/* <div className="container mx-auto px-4">
           <div className="section-title">
             <Title level={2} style={{ textAlign: "center" }}>
               What Our Clients Say
@@ -273,7 +274,7 @@ export default function Home() {
               ))}
             </Carousel>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="py-16 bg-[#1890ff] text-white">
         <div className="container mx-auto px-4 text-center">
