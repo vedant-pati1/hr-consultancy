@@ -26,11 +26,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       }}
     >
       <div className="container mx-auto px-4 text-center">
-        <Title
-          level={1}
-        >
-          <span 
-          className="text-white mb-5 text-4xl md:text-5xl lg:text-6xl">{title}</span>
+        <Title level={1}>
+          <span className="text-white mb-5 text-4xl md:text-5xl lg:text-6xl">
+            {title}
+          </span>
         </Title>
         <Paragraph
           style={{
@@ -43,9 +42,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             marginRight: "auto",
           }}
         >
-          <div className="text-xl">
-          {subtitle}
-          </div>
+          <div className="text-xl">{subtitle}</div>
         </Paragraph>
 
         {showButtons && (

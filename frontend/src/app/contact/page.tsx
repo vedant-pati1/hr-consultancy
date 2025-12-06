@@ -9,6 +9,7 @@ const { Title, Paragraph, Text } = Typography;
 const ContactPage: React.FC = () => {
   return (
     <div>
+      
       <HeroSection
         title="Contact Us"
         subtitle="Get in touch with our team for any questions or to start your HR transformation journey"

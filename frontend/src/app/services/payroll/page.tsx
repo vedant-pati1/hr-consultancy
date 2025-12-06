@@ -43,22 +43,32 @@ export default function Payroll() {
         showButtons={false}
       />
       <div className="my-5">
-        <Title level={2}> <span className="">What We Offer:</span></Title>
+        <Title level={2}>
+          {" "}
+          <span className="">What We Offer:</span>
+        </Title>
       </div>
       <div className="flex flex-col items-center px-3">
-
-      {offerings.map((offering: Offering, index) => {
-        return (
-          <div className="apple m-5 max-w-[1500px] w-full max-h-[1000px] h-auto" key={index}>
-            <Card>
+        {offerings.map((offering: Offering, index) => {
+          return (
+            <div
+              className="apple m-5 max-w-[1500px] w-full max-h-[1000px] h-auto"
+              key={index}
+            >
+              <Card>
                 <div className="flex flex-col gap-5 md:flex-row">
-              <h1 className="font-bold text-2xl md:text-3xl md:mx-5 md:flex-[0.3]"> {offering.title}</h1>
-              <p className="text-[16px] md:text-[20px] md:flex-[0.6]">{offering.description}</p>
+                  <h1 className="font-bold text-2xl md:text-3xl md:mx-5 md:flex-[0.3]">
+                    {" "}
+                    {offering.title}
+                  </h1>
+                  <p className="text-[16px] md:text-[20px] md:flex-[0.6]">
+                    {offering.description}
+                  </p>
                 </div>
-            </Card>
-          </div>
-        );
-      })}
+              </Card>
+            </div>
+          );
+        })}
       </div>
     </>
   );

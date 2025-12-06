@@ -10,7 +10,6 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 
-// const { Option } = Select;
 import Title from "antd/es/typography/Title";
 import TextArea from "antd/es/input/TextArea";
 import { Option } from "antd/es/mentions";
